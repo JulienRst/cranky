@@ -1,0 +1,41 @@
+// 
+//  Fonts
+// 
+$font: 'Raleway';
+
+%body-font {
+  font-weight: 300;
+}
+
+%title-font {
+  font-weight: bold;
+}
+
+//
+// Font Sizes
+// 
+$md: 1.7rem;
+
+// Font Sizes Intetions (only export thoses ones)
+$subtitle-size: $md;
+
+// 
+//  Colors
+// 
+$violet: #D8B6FE;
+
+// 
+// Colors Intentions (only export thoses ones)
+// 
+$primary: $violet;
+
+
+// 
+//  Spacing
+// 
+
+$paddingXsm: 2px;
+$paddingSm: 4px;
+$paddingSmd: 6px;
+$paddingMd: 8px;
+$paddingXl: 42px;

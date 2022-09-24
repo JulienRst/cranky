@@ -1,0 +1,5 @@
+@import 'ui/variables.module.scss';
+
+.emphase {
+  @extend %title-font;
+}

@@ -1,0 +1,14 @@
+.illustration {
+  width: 100%;
+  display: block;
+  background-position: center;
+  background-size: contain;
+  background-image: url('./images/faceBlackAndWhite.jpg');
+  background-repeat: no-repeat;
+  transition: 0.3s;
+
+  &:hover {
+    background-image: url('./images/faceColors.jpg');
+    transition: 0.3s;
+  }
+}
