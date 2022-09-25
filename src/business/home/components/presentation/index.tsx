@@ -11,11 +11,21 @@ interface PresentationProps {
 
 const Presentation: React.FC<PresentationProps> = ({ className }) => {
   return (
-    <Spacer className={className} direction="vertical" justify="center" align="center" size="no-space">
+    <Spacer
+      className={className}
+      direction="vertical"
+      justify="center"
+      align="center"
+      size="no-space"
+    >
       <Title width={450} />
-      <p className={styles.subtitle}><Trans i18nKey="home.subtitle">a<Emphase>b</Emphase>c<Emphase>d</Emphase></Trans></p>
+      <p className={styles.subtitle}>
+        <Trans i18nKey="home.subtitle">
+          a<Emphase>b</Emphase>c<Emphase>d</Emphase>
+        </Trans>
+      </p>
     </Spacer>
-  )
-}
+  );
+};
 
 export default Presentation;

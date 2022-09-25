@@ -11,7 +11,7 @@ const Illustration: React.FC<IllustrationProps> = ({ className }) => {
     <Spacer className={className} justify="center">
       <div className={styles.illustration} />
     </Spacer>
-  )
-}
+  );
+};
 
 export default Illustration;

@@ -5,7 +5,13 @@ import styles from './index.module.scss';
 
 interface SpaceProps extends ReactDiv {
   direction?: 'vertical' | 'horizontal';
-  size?: 'extra-small' | 'small' | 'middle' | 'large' | 'no-space' | 'extra-large';
+  size?:
+    | 'extra-small'
+    | 'small'
+    | 'middle'
+    | 'large'
+    | 'no-space'
+    | 'extra-large';
   align?: 'center' | 'start' | 'end' | 'baseline';
   justify?: 'start' | 'center' | 'space-around' | 'space-between' | 'end';
   grow?: boolean;
@@ -32,7 +38,7 @@ const Spacer: React.FC<SpaceProps> = ({
         rest.className,
         {
           grow,
-        }
+        },
       )}
     >
       {children}
