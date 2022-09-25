@@ -6,3 +6,15 @@ body {
   font-family: $font;
   @extend %body-font;
 }
+
+a {
+  transition: 0.3s;
+  &:hover {
+    color: $primary;
+    transition: 0.3s;
+  }
+
+  &.active {
+    @extend %title-font;
+  }
+}

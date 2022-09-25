@@ -10,7 +10,7 @@ interface BreakpointStatus {
 
 export default function useBreakpoint(): BreakpointStatus {
   const { width } = useWindowSize();
-  const debouncedWidth = useDebounce(width, 300);
+  const debouncedWidth = useDebounce(width, 100) || width;
 
   let breakpointStatus = {
     isHigherThanDesktop: false,

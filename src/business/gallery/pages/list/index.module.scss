@@ -1,0 +1,66 @@
+@import 'ui/variables.module.scss';
+
+.container {
+  display: grid;
+  grid-gap: 1rem;
+
+  @media (min-width: $desktop) {
+    grid-template-columns: 700fr 500fr 500fr;
+
+    .titleContainer {
+      grid-row: 2;
+      grid-column: 1;
+      height: 200fr;
+    }
+
+    .navContainer {
+      grid-row: 1;
+      grid-column: 2 / 4;
+    }
+
+    .firstRowFirstCol {
+      grid-column: 1;
+      grid-row: 3;
+      display: flex;
+      align-items: flex-end;
+    }
+
+    .firstRowSecondCol {
+      grid-row: 2 / 4;
+      grid-column: 2;
+      display: flex;
+      align-items: flex-end;
+    }
+
+    .firstRowThirdCol {
+      grid-row: 2 / 4;
+      grid-column: 3;
+      display: flex;
+      align-items: flex-end;
+    }
+
+    .secondRow {
+      grid-row: 4;
+      grid-column: 1 / 4;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1rem;
+
+      .secondRowFirstCol {
+        grid-row: 1;
+        grid-column: 1;
+      }
+    
+      .secondRowSecondCol {
+        grid-row: 1;
+        grid-column: 2;
+      }
+    }
+  }
+  
+}
+
+.images {
+  width: 100%;
+  border: 1px solid $primary;
+}

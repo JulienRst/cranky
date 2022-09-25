@@ -37,7 +37,7 @@ const Spacer: React.FC<SpaceProps> = ({
         justify && styles[`justify-${justify}`],
         rest.className,
         {
-          grow,
+          [styles.grow]: grow,
         },
       )}
     >
