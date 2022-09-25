@@ -1,5 +1,6 @@
 import React from 'react';
 import { Trans } from 'react-i18next';
+import useBreakpoint from 'technical/breakpoint/hook';
 import Emphase from 'ui/emphase';
 import Spacer from 'ui/spacer';
 import Title from '../title';
@@ -10,6 +11,7 @@ interface PresentationProps {
 }
 
 const Presentation: React.FC<PresentationProps> = ({ className }) => {
+  const { isHigherThanDesktop } = useBreakpoint();
   return (
     <Spacer
       className={className}
@@ -18,7 +20,7 @@ const Presentation: React.FC<PresentationProps> = ({ className }) => {
       align="center"
       size="no-space"
     >
-      <Title width={450} />
+      <Title width={isHigherThanDesktop ? 450 : 300} />
       <p className={styles.subtitle}>
         <Trans i18nKey="home.subtitle">
           a<Emphase>b</Emphase>c<Emphase>d</Emphase>

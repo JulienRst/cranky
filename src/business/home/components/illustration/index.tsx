@@ -1,3 +1,4 @@
+import classnames from 'classnames';
 import React from 'react';
 import Spacer from 'ui/spacer';
 import styles from './index.module.scss';
@@ -8,7 +9,10 @@ interface IllustrationProps {
 
 const Illustration: React.FC<IllustrationProps> = ({ className }) => {
   return (
-    <Spacer className={className} justify="center">
+    <Spacer
+      className={classnames(styles.ctnIllustration, className)}
+      justify="center"
+    >
       <div className={styles.illustration} />
     </Spacer>
   );

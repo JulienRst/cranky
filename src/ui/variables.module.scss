@@ -39,3 +39,12 @@ $paddingSm: 4px;
 $paddingSmd: 6px;
 $paddingMd: 8px;
 $paddingXl: 42px;
+
+// 
+// Breakpoint
+// 
+$desktop: 1080px;
+
+:export {
+  desktop: $desktop;
+}

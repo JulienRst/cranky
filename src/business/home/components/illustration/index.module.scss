@@ -1,14 +1,30 @@
-.illustration {
-  width: 100%;
-  display: block;
-  background-position: center;
-  background-size: contain;
-  background-image: url('./images/faceBlackAndWhite.jpg');
-  background-repeat: no-repeat;
-  transition: 0.3s;
+@import 'ui/variables.module.scss';
 
-  &:hover {
-    background-image: url('./images/faceColors.jpg');
+
+
+.ctnIllustration  {
+  .illustration {
+    width: 100%;
+    min-height: 600px;
+    background-position: top;
+    background-size: contain;
+    background-image: url('./images/faceBlackAndWhite.jpg');
+    background-repeat: no-repeat;
     transition: 0.3s;
+  
+    &:hover {
+      background-image: url('./images/faceColors.jpg');
+      transition: 0.3s;
+    }
+
+  }
+  
+  @media (min-width: $desktop) {
+    width: 100%;
+
+    .illustration {
+      background-position: center;
+      min-height: auto;
+    }
   }
 }
