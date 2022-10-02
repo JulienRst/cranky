@@ -5,7 +5,7 @@ interface TypographyProps extends PropsWithChildren {
   h: 1 | 2 | 3 | 4 | 5;
 }
 
-const Typography: React.FC<TypographyProps> = ({ h, children, ...rest }) => {
+const Title: React.FC<TypographyProps> = ({ h, children, ...rest }) => {
   switch (h) {
     case 1:
       return <h1 {...rest}>{children}</h1>;
@@ -20,5 +20,7 @@ const Typography: React.FC<TypographyProps> = ({ h, children, ...rest }) => {
       return <h5 {...rest}>{children}</h5>;
   }
 };
+
+const Typography = { Title };
 
 export default Typography;

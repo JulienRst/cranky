@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom';
 import HomePage from '../home/pages/home';
 import GalleryPage from '../gallery/pages/list';
+import DetailPage from '../gallery/pages/detail';
 import ContactPage from '../contact/pages/contact';
 import routes from './routes';
 import Root from 'business/root/pages/root';
@@ -21,6 +22,13 @@ const router = createBrowserRouter(
           key={routes.gallery}
           path={routes.gallery}
           element={<GalleryPage />}
+          children={[
+            <Route
+              key={routes.detail}
+              path={routes.detail}
+              element={<DetailPage />}
+            />,
+          ]}
         />,
         <Route
           key={routes.contact}

@@ -1,0 +1,7 @@
+@import 'ui/variables.module.scss';
+
+.cell {
+  border: 1px solid $primary;
+  display: flex;
+  align-items: center;
+}

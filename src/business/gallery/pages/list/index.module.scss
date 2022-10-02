@@ -21,26 +21,19 @@
     .firstRowFirstCol {
       grid-column: 1;
       grid-row: 3;
-      display: flex;
-      align-items: flex-end;
     }
 
     .firstRowSecondCol {
       grid-row: 2 / 4;
       grid-column: 2;
-      display: flex;
-      align-items: flex-end;
     }
 
     .firstRowThirdCol {
       grid-row: 2 / 4;
       grid-column: 3;
-      display: flex;
-      align-items: flex-end;
     }
 
     .secondRow {
-      grid-row: 4;
       grid-column: 1 / 4;
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -62,5 +55,4 @@
 
 .images {
   width: 100%;
-  border: 1px solid $primary;
 }
