@@ -1,3 +1,4 @@
+import routes from 'business/router/routes';
 import React from 'react';
 import useBreakpoint from 'technical/breakpoint/hook';
 import Spacer from 'ui/spacer';
@@ -20,7 +21,7 @@ const Presentation: React.FC<PresentationProps> = ({ className }) => {
       grow
     >
       <Nav />
-      <Title size="large" />
+      <Title size="large" link={routes.gallery} />
       <Socials />
     </Spacer>
   );

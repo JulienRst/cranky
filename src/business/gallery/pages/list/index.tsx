@@ -2,6 +2,7 @@ import Item from 'business/gallery/components/item';
 import { useGallery } from 'business/gallery/services/hooks/list';
 import Nav from 'business/home/components/nav';
 import Title from 'business/home/components/title';
+import routes from 'business/router/routes';
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 import Cell from 'ui/cell';
@@ -26,7 +27,11 @@ const ListPage: React.FC = () => {
   return (
     <>
       <div className={styles.container}>
-        <Title link className={styles.titleContainer} size="small" />
+        <Title
+          link={routes.home}
+          className={styles.titleContainer}
+          size="small"
+        />
         <Spacer className={styles.navContainer} justify="center" align="center">
           <Nav />
         </Spacer>

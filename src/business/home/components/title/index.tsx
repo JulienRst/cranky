@@ -49,12 +49,12 @@ const Content: React.FC<ContentProps> = ({ className, size }) => {
 };
 
 interface TitleProps extends ContentProps {
-  link?: boolean;
+  link?: routes;
 }
 
-const Title: React.FC<TitleProps> = ({ size, className, link = false }) => {
+const Title: React.FC<TitleProps> = ({ size, className, link }) => {
   return link ? (
-    <Link className={className} to={routes.home}>
+    <Link className={className} to={link}>
       <Content size={size} />
     </Link>
   ) : (
